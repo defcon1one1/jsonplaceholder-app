@@ -1,0 +1,57 @@
+/* todos.css */
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* Add this style to highlight completed todos */
+.list.completed {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/* Add this style to highlight incomplete todos */
+.list.incomplete {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.list span {
+  flex: 1;
+  padding: 5px;
+}
+
+.list.completed span {
+  color: #155724; /* Green color for completed tasks */
+}
+
+.list.incomplete span {
+  color: #721c24; /* Red color for incomplete tasks */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.pagination button:hover {
+  background-color: #2980b9;
+}

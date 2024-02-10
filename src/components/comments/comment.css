@@ -1,0 +1,58 @@
+.list {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list span {
+  flex: 1;
+  padding: 5px;
+}
+
+.list button {
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.list button:hover {
+  background-color: #2980b9;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination li {
+  margin-right: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.pagination button:hover {
+  background-color: #2980b9;
+}
+
+.pagination .active button {
+  background-color: #2980b9;
+}
